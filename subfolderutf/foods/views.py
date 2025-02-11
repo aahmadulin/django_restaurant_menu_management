@@ -5,11 +5,8 @@ from .serializers import FoodListSerializer
 
 class FoodListView(APIView):
     def get(self, request, *args, **kwargs):
-        # Фильтруем категории, у которых есть хотя бы одно блюдо с is_publish=True
         categories = FoodCategory.objects.filter(food__is_publish=True).distinct()
-        
-        # Сериализуем данные
+
         serializer = FoodListSerializer(categories, many=True)
-        
-        # Возвращаем JSON-ответ
+
         return Response(serializer.data)
