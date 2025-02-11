@@ -9,9 +9,10 @@
 -Исключение категорий, в которых нет опубликованных блюд.
 
 ## Как установить?
+Перво-наперво, создайте папку под проект.
 
-1) git clone https://github.com/aahmadulin/django_restaurant_menu_management
-2) Перейдите в папку проекта: cd subfolderutf
+1) Клонируйте в папку репозиторий: git clone https://github.com/aahmadulin/django_restaurant_menu_management
+2) Перейдите в папку проекта: cd django_restaurant_menu_management/subfolderutf
 3) Создайте виртуальное окружение: python -m venv .venv
 4) Активируйте виртуальное окружение: .venv\Scripts\activate (если у вас Windows), source .venv/bin/activate (если у вас macOS/Linux)
 5) Установите зависимости из requirements.txt: pip install -r requirements.txt
