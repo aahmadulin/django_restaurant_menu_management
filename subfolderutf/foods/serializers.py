@@ -11,7 +11,7 @@ class FoodSerializer(serializers.ModelSerializer):
 
 
 class FoodListSerializer(serializers.ModelSerializer):
-    foods = serializers.SerializerMethodField()  # Используем SerializerMethodField для кастомной логики
+    foods = serializers.SerializerMethodField()
 
     class Meta:
         model = FoodCategory
